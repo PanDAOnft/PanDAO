@@ -1,0 +1,277 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: PopLight;
+    src: url(/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: PopRegular;
+    src: url(/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: PopBold;
+    src: url(/Poppins/Poppins-Bold.ttf);
+}
+
+html, body{min-height:100%;}
+
+
+body {
+    font-family: PopLight;
+    background: radial-gradient(62.08% 149.34% at 32.18% 81.34%, rgba(232, 180, 0, 0.55), rgba(232, 180, 0, 1))
+}
+
+.homepage {
+    color: black;
+    
+}
+
+nav {
+    height: 10vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.Logo {
+    display: flex;
+    flex: 1;
+    font-size: 30px;
+    font-family: PopRegular;
+    
+}
+
+
+li {
+    flex: 1;
+    margin-right: 5vw;
+    font-size: 22px;
+    display: inline;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.homepage {
+    bottom: 0;
+    height: 90vh;
+    width: 90%;
+    display: flex;
+    margin: auto;
+    align-items: flex-end;
+    border: 0px;
+    
+}
+
+.hero {
+    display: flex;
+    flex: 1;
+    align-self: flex-end;
+}
+
+
+
+.Panda {
+    width: 40vw;
+    animation: raise 1.5s ease;
+    margin: 0;
+    padding: 0;
+}
+
+.details {
+    flex: 1;
+    padding: 0;
+    margin-bottom: 22vh;
+}
+
+h1{
+    font-size: 60px;
+    font-family: PopBold;
+    letter-spacing: -0.08em;
+}
+
+h2 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+button {
+    margin-top: 5vh;;
+    padding: 3vh 7vw;
+    background: #33406D;
+    border-radius: 24px;
+    color: white;
+    font-family: PopBold;
+    font-size: 36px;
+    border: 0;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.cerchio1{
+    display: block;
+    position: absolute;
+    left: 8vw;
+    bottom: 22vh;
+    width: 25%;
+    z-index: -2;
+}
+
+.cerchio2{
+    position: absolute;
+    top: 0;
+    right: 10%;
+    width: 30%;
+    z-index: -2;
+}
+
+.cerchio3{
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+    max-width: 30%;
+    z-index: -2;
+}
+
+.foglia1 {
+    position: absolute;
+    left: 40vw;
+    top: 0;
+    width: 15vw;
+    opacity: 0.65;
+    z-index: -1;
+}
+
+.foglia2 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15vw;
+    opacity: 0.65;
+    z-index: -1;
+}
+
+.foglia3 {
+    display: block;
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    width: 16vw;
+    opacity: 0.65;
+    z-index: -1;
+}
+
+.foglia4 {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 37vh;
+    width: 11vw;
+    opacity: 0.65;
+    z-index: -1;
+}
+
+.foglia5 {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 13vw;
+    opacity: 0.65;
+    z-index: -1;
+}
+
+@keyframes raise {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10vh;
+    }
+
+    li {
+        margin: 10px;
+    }
+    .homepage {
+        flex-direction: column-reverse;
+    }
+    .details {
+        text-align: center;
+        margin-top: 5vh;
+        margin-bottom: 0;
+        margin-left: auto;
+    }
+    h1 {
+        font-size: 42px;
+    }
+    .Panda {
+        display: block;
+        position: absolute;
+        margin: auto;
+        width: auto;
+        height: auto;
+        max-width: 85vw;
+        max-height: 55vh;
+        left: 0;
+        bottom: 0;
+        border-radius: 0;
+        z-index: -1;
+    }
+
+    .foglia1 {
+        width: 20vw;
+    }
+
+    .foglia2 {
+        width: 30vw;
+    }
+
+    .foglia3 {
+        width: 30vw;
+    }
+
+    .foglia4 {
+        width: 30vw;
+    }
+
+    .foglia5 {
+        width: 20vw;
+    }
+
+    .cerchio1 {
+        width: 70%;
+    }
+
+    .cerchio2 {
+        width: 70%;
+    }
+
+    .cerchio3 {
+        width: 70%;
+    }
+}
