@@ -127,7 +127,7 @@ button {
     left: 8vw;
     bottom: 22vh;
     width: 25%;
-    z-index: -2;
+    z-index: -3;
 }
 
 .cerchio2{
@@ -135,7 +135,7 @@ button {
     top: 0;
     right: 10%;
     width: 30%;
-    z-index: -2;
+    z-index: -3;
 }
 
 .cerchio3{
@@ -143,7 +143,7 @@ button {
     bottom: 0;
     right: 30%;
     max-width: 30%;
-    z-index: -2;
+    z-index: -3;
 }
 
 .foglia1 {
@@ -152,7 +152,7 @@ button {
     top: 0;
     width: 15vw;
     opacity: 0.65;
-    z-index: -1;
+    z-index: -2;
 }
 
 .foglia2 {
@@ -162,7 +162,7 @@ button {
     left: 0;
     width: 15vw;
     opacity: 0.65;
-    z-index: -1;
+    z-index: -2;
 }
 
 .foglia3 {
@@ -172,7 +172,7 @@ button {
     right: 0;
     width: 16vw;
     opacity: 0.65;
-    z-index: -1;
+    z-index: -2;
 }
 
 .foglia4 {
@@ -182,7 +182,7 @@ button {
     top: 37vh;
     width: 11vw;
     opacity: 0.65;
-    z-index: -1;
+    z-index: -2;
 }
 
 .foglia5 {
@@ -192,7 +192,7 @@ button {
     top: 0;
     width: 13vw;
     opacity: 0.65;
-    z-index: -1;
+    z-index: -2;
 }
 
 @keyframes raise {
