@@ -47,7 +47,7 @@ nav {
     flex: 1;
     font-size: 30px;
     font-family: PopRegular;
-    
+    margin-left: 13vw;
 }
 
 
@@ -212,6 +212,10 @@ button {
         flex-direction: column;
         justify-content: center;
         margin-top: 10vh;
+    }
+    
+    .Logo {
+        margin-left: 0;
     }
 
     li {
