@@ -223,6 +223,7 @@ button {
     }
     .homepage {
         flex-direction: column-reverse;
+        height: auto;
     }
     .details {
         text-align: center;
