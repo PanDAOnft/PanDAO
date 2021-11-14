@@ -41,15 +41,14 @@ nav {
     align-items: center;
 }
 
-
 .Logo {
     display: flex;
     flex: 1;
     font-size: 30px;
     font-family: PopRegular;
+    margin-left: 13vw;
     
 }
-
 
 li {
     flex: 1;
@@ -109,7 +108,7 @@ h2 {
 }
 
 button {
-    margin-top: 5vh;;
+    margin-top: 5vh;
     padding: 3vh 7vw;
     background: #33406D;
     border-radius: 24px;
@@ -127,7 +126,7 @@ button {
     left: 8vw;
     bottom: 22vh;
     width: 25%;
-    z-index: -2;
+    z-index: -3;
 }
 
 .cerchio2{
@@ -135,7 +134,7 @@ button {
     top: 0;
     right: 10%;
     width: 30%;
-    z-index: -2;
+    z-index: -3;
 }
 
 .cerchio3{
@@ -143,7 +142,7 @@ button {
     bottom: 0;
     right: 30%;
     max-width: 30%;
-    z-index: -2;
+    z-index: -3;
 }
 
 .foglia1 {
@@ -152,27 +151,25 @@ button {
     top: 0;
     width: 15vw;
     opacity: 0.65;
-    z-index: -1;
+    z-index: -2;
 }
 
 .foglia2 {
-    display: block;
     position: absolute;
     top: 0;
     left: 0;
     width: 15vw;
     opacity: 0.65;
-    z-index: -1;
+    z-index: -2;
 }
 
 .foglia3 {
-    display: block;
     position:absolute;
     bottom: 0;
     right: 0;
     width: 16vw;
     opacity: 0.65;
-    z-index: -1;
+    z-index: -2;
 }
 
 .foglia4 {
@@ -182,7 +179,7 @@ button {
     top: 37vh;
     width: 11vw;
     opacity: 0.65;
-    z-index: -1;
+    z-index: -2;
 }
 
 .foglia5 {
@@ -192,9 +189,61 @@ button {
     top: 0;
     width: 13vw;
     opacity: 0.65;
-    z-index: -1;
+    z-index: -2;
 }
 
+.page2 {
+    background-color: black;
+    color: white;
+    border: 10px solid lightblue;
+    height: fit-content;
+}
+
+.gallery-images {
+    border: 7px solid lightcoral;
+    height: 25vh;
+    margin: 40px 20px;
+}
+
+
+.team {
+    border: 7px solid lightgreen;
+    height: 75vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.theteam {
+    border: 5px solid lightskyblue;
+    text-align: center;
+    font-family: PopBold;
+    font-size: 32px;
+    width: 100% ;
+    height: 100px;
+}
+
+.Leo {
+    border: 3px solid purple;
+    height: 300px;
+    
+    text-align: center;
+}
+
+.Franci {
+    border: 3px solid purple;
+    height: 300px;
+    width: 100px;
+    text-align: center;
+}
+
+.Noce {
+    border: 3px solid purple;
+    height: 300px;
+    width: 100px;
+    text-align: center;
+}
 @keyframes raise {
     0% {
         opacity: 0;
@@ -206,12 +255,18 @@ button {
         transform: translateY(0%);
     }
 }
-
 @media screen and (max-width: 1100px) {
+
+    body {
+        background-color:rgba(232, 180, 0, 1) ;
+    }
+
     nav {
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 10vh;
+        display: none;
+    }
+
+    .Logo {
+        margin-left: 0;
     }
 
     li {
@@ -219,27 +274,45 @@ button {
     }
     .homepage {
         flex-direction: column-reverse;
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        align-items: center;  
+    }
+    .hero {
+        align-self: center;
+        margin-bottom: 0;
     }
     .details {
+        border: 5px solid green;
         text-align: center;
         margin-top: 5vh;
         margin-bottom: 0;
-        margin-left: auto;
+        padding-top: 20%;
+        align-self: center;
     }
     h1 {
         font-size: 42px;
     }
+    h2 {
+        font-size: 18px;
+    }
+    button {
+        padding: 8px 36px;
+        margin-top: 6vh;
+        font-size: 22px;
+    }
     .Panda {
-        display: block;
-        position: absolute;
-        margin: auto;
+        border: 3px solid darkslategrey;
+        border-radius: 30px;
+        background-color: darkslategrey;
+        padding-top: 11vh;
+        margin: 20px;
         width: auto;
         height: auto;
         max-width: 85vw;
-        max-height: 55vh;
-        left: 0;
-        bottom: 0;
-        border-radius: 0;
+        max-height: 50vh;
         z-index: -1;
     }
 
@@ -264,7 +337,7 @@ button {
     }
 
     .cerchio1 {
-        width: 70%;
+        display: none;
     }
 
     .cerchio2 {
